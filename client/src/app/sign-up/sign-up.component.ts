@@ -17,6 +17,12 @@ export class SignUpComponent {
 
   email = new FormControl('');
   fullName = new FormControl('');
+  referralCode = new FormControl('');
+  snippet = `$('#newUser').register({
+         passion: High,
+         opportunity: earnMoney,
+         recognition: High
+       })`
 
   private busy_ = new BehaviorSubject(false);
   public busy = this.busy_.asObservable();
